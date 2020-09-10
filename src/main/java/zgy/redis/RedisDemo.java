@@ -8,5 +8,7 @@ public class RedisDemo {
     @Autowired
     RedisTemplate redisTemplate;
 
-
+    public void test(){
+        System.out.println("commit push 之后加的");
+    }
 }
