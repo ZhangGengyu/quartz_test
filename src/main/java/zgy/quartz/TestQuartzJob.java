@@ -12,10 +12,10 @@ public class TestQuartzJob {
             System.out.println("===============【系统启动】===============");
 
             Thread.sleep(5000);
-            System.out.println("【增加job1启动】开始(每1秒输出一次)...");
+            System.out.println("【增加job1启动-设备离线】开始(每1秒输出一次)...");
             quartzManager.addJob("test", "test", "test", "test", MySchedule1.class, "0/1 * * * * ?");
 
-            Thread.sleep(20000);
+            /*Thread.sleep(20000);
             System.out.println("【修改job1时间】开始(每3秒输出一次)...");
             quartzManager.modifyJobTime("test", "test", "test", "test", "0/3 * * * * ?");
 
@@ -27,10 +27,10 @@ public class TestQuartzJob {
             System.out.println("【增加job2启动】开始(每1秒输出一次)...");
             quartzManager.addJob("test", "test", "test", "test", MySchedule1.class, "0/1 * * * * ?");
 
-            Thread.sleep(15000);
+            Thread.sleep(15000);*/
 
             // 关掉任务调度容器
-            quartzManager.shutdownJobs();
+//            quartzManager.shutdownJobs();
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -6,7 +6,16 @@
 
     <groupId>org.example</groupId>
     <artifactId>quartz_test</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>netty</module>
+        <module>myspring</module>
+        <module>read_write_file</module>
+        <module>activiti</module>
+        <module>spring-bean</module>
+        <module>feishu</module>
+    </modules>
 
     <dependencies>
         <dependency>
@@ -14,11 +23,11 @@
             <artifactId>spring-context</artifactId>
             <version>4.1.6.RELEASE</version>
         </dependency>
-        <dependency>
+<!--        <dependency>
             <groupId>org.quartz-scheduler</groupId>
             <artifactId>quartz</artifactId>
             <version>2.2.1</version>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context-support</artifactId>
@@ -29,33 +38,11 @@
             <artifactId>spring-orm</artifactId>
             <version>4.1.6.RELEASE</version>
         </dependency>
-
-        <!--&lt;!&ndash;缓存&ndash;&gt;-->
-        <dependency>
-            <groupId>redis.clients</groupId>
-            <artifactId>jedis</artifactId>
-            <version>2.9.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-pool2</artifactId>
-            <version>2.0</version>
-        </dependency>
-
-        <!--&lt;!&ndash; spring-redis &ndash;&gt;-->
-        <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-redis</artifactId>
-            <version>1.6.2.RELEASE</version>
-        </dependency>
-
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.12</version>
         </dependency>
-
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
