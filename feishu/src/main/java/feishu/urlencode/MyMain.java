@@ -20,7 +20,7 @@ import java.util.Map;
 public class MyMain {
     public String see = null;
     public static void main(String[] args) {
-        String str = "https://open.feishu.cn/app/cli_9f23bc1b85b1d00e/baseinfo?a=中文";
+        String str = "http://10.10.10.209:8080/#/";
         String result = GetRealUrl(str);
         System.out.println(result);
     }
